@@ -23,8 +23,8 @@ INSERT INTO "ECommerse"."order" (buyer_id, address_id, expedition_id, created_at
     (1, 1, 1, '2024-05-22', NOW());
 
 -- Order Detail data
-INSERT INTO "ECommerse".order_detail (order_id, product_id, quantity, created_at, updated_at) VALUES 
-    (1, 1, 1, NOW(), NOW());
+INSERT INTO "ECommerse".order_detail (order_id, product_id, product_name_snapshot, price_snapshot, weight_snapshot, quantity, created_at, updated_at) VALUES 
+    (1, 1, 'SAPPHIRE NITRO+ Radeon RX 7900 XTX 24GB', 20500000.00, 5.0, 1, NOW(), NOW());
 
 -- Payment Method data
 INSERT INTO "ECommerse".payment_method (name, created_at, updated_at) VALUES 
